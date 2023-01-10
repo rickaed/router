@@ -13,7 +13,7 @@ export class UserProfileComponent {
     name : 'Doe',
     firstName : 'John',
     age : 25,
-    quote : '',
+    quote : 'Beer or not two beer ?',
     photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
   };
   show = false  

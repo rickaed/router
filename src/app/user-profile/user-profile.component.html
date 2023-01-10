@@ -1,11 +1,11 @@
-<div>
+<h3>User-Profile</h3>
+<div class="card">
     <img [src]="user.photo" [alt]="user.name">
     <h2>Nom : {{user.name}}</h2>
     <h2>Prénom : {{user.firstName}}</h2>
+    <div *ngIf="show">Age : {{user.age}}</div>
     <p>{{user.quote}}</p>
     <input type="text" [(ngModel)]="user.quote">
     <br>
     <button (click)="show = !show">{{show ? 'Masquer mon âge' : 'Montrer mon âge'}}</button>    
-    <br>
-    <div *ngIf="show">Age : {{user.age}}</div>
 </div>
